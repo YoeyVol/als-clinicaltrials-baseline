@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f5f4ef"/>
+  <rect x="0" y="0" width="18" height="630" fill="#2f6b4f"/>
+  <rect x="18" y="0" width="18" height="630" fill="#c4a35a"/>
+  <rect x="36" y="0" width="18" height="630" fill="#5b8fb9"/>
+  <rect x="90" y="90" width="1020" height="450" rx="28" fill="#fffcf7" stroke="#e6e4dc" stroke-width="2"/>
+  <text x="140" y="200" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#141413">Combating ALS diseases</text>
+  <text x="140" y="290" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" fill="#141413">ALS Clinical Trials Baseline</text>
+  <text x="140" y="370" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#5e5e5a">1097 ALS studies  ·  486 drug/biological</text>
+  <text x="140" y="420" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#5e5e5a">ClinicalTrials.gov monitor</text>
+</svg>
