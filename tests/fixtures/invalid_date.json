@@ -1,0 +1,20 @@
+{
+  "totalCount": 1,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT10000009",
+          "briefTitle": "ALS study with a bad date"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "lastUpdatePostDateStruct": {"date": "yesterday"}
+        },
+        "designModule": {"studyType": "INTERVENTIONAL", "phases": ["PHASE2"]},
+        "conditionsModule": {"conditions": ["Amyotrophic Lateral Sclerosis"]}
+      },
+      "hasResults": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "baselineId": "2026-10-28",
+  "baselineRecordCount": 486,
+  "currentRecordCount": 485,
+  "historicalBroadConditionSearchCount": 1097,
+  "historicalEmbeddedCount": 486,
+  "intersectionCount": 484,
+  "notCancellations": true,
+  "notNewTrials": true,
+  "note": "Differences versus the frozen 2026-10-28 baseline are query-scope and time-window differences for human review. They are not a list of new trials and not cancellations. The original static page did not record the exact API query string. V1.1 monitoring uses query.cond=ALS plus a drug, biological, or expanded-access filter. Automatic change detection compares only the previous successful snapshot of this same query.",
+  "noteZh": "与 2026-10-28 冻结基线的 NCT 差异，是查询口径和时间窗口不同，供人工复核。只出现在当前查询不是新增试验，只出现在历史基线也不是试验被取消。原始静态页没有保存当时的精确 API 查询字符串。V1.1 监测查询是 query.cond=ALS，并限定药物、生物制剂或扩展使用。自动变化检测只对照这一同一查询的上一次成功快照。",
+  "onlyInBaseline": [
+    "NCT04894240",
+    "NCT06177431"
+  ],
+  "onlyInBaselineCount": 2,
+  "onlyInCurrent": [
+    "NCT06169176"
+  ],
+  "onlyInCurrentCount": 1
+}

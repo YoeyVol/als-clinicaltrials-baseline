@@ -1,0 +1,13 @@
+{
+  "reports": [
+    {
+      "changeCount": 0,
+      "detectedAt": "2026-10-29T08:40:26Z",
+      "id": "20261029T084026Z",
+      "kind": "initial_snapshot",
+      "path": "data/changes/20261029T084026Z.json",
+      "summary": {}
+    }
+  ],
+  "schemaVersion": 1
+}

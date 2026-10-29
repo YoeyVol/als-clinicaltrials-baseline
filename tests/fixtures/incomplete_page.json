@@ -1,0 +1,17 @@
+{
+  "totalCount": 3,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCT10000007", "briefTitle": "Only one of three"},
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "lastUpdatePostDateStruct": {"date": "2024-04-01"}
+        },
+        "designModule": {"studyType": "INTERVENTIONAL", "phases": ["PHASE2"]},
+        "conditionsModule": {"conditions": ["Amyotrophic Lateral Sclerosis"]}
+      },
+      "hasResults": false
+    }
+  ]
+}

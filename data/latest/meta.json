@@ -1,0 +1,80 @@
+{
+  "broadConditionSearch": {
+    "meaning": "Background size of query.cond=ALS before the drug, biological, or expanded-access filter. This is not the frozen 2026-10-28 count of 1097.",
+    "query": {
+      "query.cond": "ALS"
+    },
+    "totalCount": 1091,
+    "warning": null
+  },
+  "checksumSha256": "c964bc1478c08faacdea9b88535a056ba9c481366ca7a9fee9dda32543a1a1ff",
+  "frozenBaseline": {
+    "broadConditionSearchCount": 1097,
+    "embeddedRecordCount": 486,
+    "id": "2026-10-28",
+    "note": "Differences versus the frozen 2026-10-28 baseline are query-scope and time-window differences for human review. They are not a list of new trials and not cancellations. The original static page did not record the exact API query string. V1.1 monitoring uses query.cond=ALS plus a drug, biological, or expanded-access filter. Automatic change detection compares only the previous successful snapshot of this same query.",
+    "noteZh": "与 2026-10-28 冻结基线的 NCT 差异，是查询口径和时间窗口不同，供人工复核。只出现在当前查询不是新增试验，只出现在历史基线也不是试验被取消。原始静态页没有保存当时的精确 API 查询字符串。V1.1 监测查询是 query.cond=ALS，并限定药物、生物制剂或扩展使用。自动变化检测只对照这一同一查询的上一次成功快照。",
+    "timestamp": "2026-10-28T23:59:00-07:00"
+  },
+  "metrics": {
+    "activeNotRecruitingCount": 28,
+    "broaderMndCount": 3,
+    "codedPhaseAssignments": 561,
+    "enrollingByInvitationCount": 5,
+    "expandedAccessCount": 15,
+    "multiPhaseCount": 101,
+    "notYetRecruitingCount": 29,
+    "otherConditionCount": 24,
+    "phaseCountSum": 586,
+    "phaseCounts": {
+      "EARLY_PHASE1": 18,
+      "NA": 13,
+      "PHASE1": 164,
+      "PHASE2": 267,
+      "PHASE3": 92,
+      "PHASE4": 7,
+      "UNSPECIFIED": 25
+    },
+    "phaseCountsOverlap": true,
+    "recordCount": 485,
+    "recruitingOnlyCount": 44,
+    "statusCountSum": 485,
+    "statusCounts": {
+      "ACTIVE_NOT_RECRUITING": 28,
+      "APPROVED_FOR_MARKETING": 2,
+      "AVAILABLE": 3,
+      "COMPLETED": 252,
+      "ENROLLING_BY_INVITATION": 5,
+      "NOT_YET_RECRUITING": 29,
+      "NO_LONGER_AVAILABLE": 7,
+      "RECRUITING": 44,
+      "SUSPENDED": 3,
+      "TEMPORARILY_NOT_AVAILABLE": 3,
+      "TERMINATED": 50,
+      "UNKNOWN": 42,
+      "WITHDRAWN": 17
+    },
+    "strictAlsCount": 458,
+    "unspecifiedConditionCount": 0
+  },
+  "monitoringQueryDiffersFromFrozenBaseline": true,
+  "pagesFetched": 1,
+  "query": {
+    "fields": "NCTId,BriefTitle,OfficialTitle,OverallStatus,StudyType,Phase,Condition,InterventionType,InterventionName,LeadSponsorName,LocationFacility,LocationCity,LocationCountry,LocationStatus,LastUpdatePostDate,StudyFirstPostDate,LastUpdateSubmitDate,StatusVerifiedDate,HasResults,ResultsFirstPostDate,ResultsFirstSubmitDate,OutcomeMeasureType,OutcomeMeasureTitle,OutcomeMeasureTimeFrame,OutcomeMeasureParamType,OutcomeMeasureUnitOfMeasure",
+    "filter.advanced": "AREA[InterventionType]DRUG OR AREA[InterventionType]BIOLOGICAL OR AREA[StudyType]EXPANDED_ACCESS",
+    "pageSize": 1000,
+    "query.cond": "ALS"
+  },
+  "recordCount": 485,
+  "runStatus": "success",
+  "schemaVersion": 1,
+  "scriptVersion": "1.1.0",
+  "snapshotId": "c964bc1478c08faacdea9b88535a056ba9c481366ca7a9fee9dda32543a1a1ff",
+  "source": "ClinicalTrials.gov API v2",
+  "sourceEndpoint": "https://clinicaltrials.gov/api/v2/studies",
+  "sourceUpdatedAt": "2026-10-28",
+  "sourceUpdatedAtMeaning": "Maximum lastUpdatePostDate among studies in this snapshot. This is the newest study-level post date in the result, not a separate ClinicalTrials.gov database clock.",
+  "syncedAt": "2026-10-29T08:40:26Z",
+  "totalCountReported": 485,
+  "warnings": []
+}

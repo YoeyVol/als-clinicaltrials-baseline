@@ -1,0 +1,77 @@
+name: Sync ClinicalTrials.gov
+
+on:
+  schedule:
+    # Weekdays at 13:15 UTC. GitHub may delay the start.
+    - cron: "15 13 * * 1-5"
+  workflow_dispatch:
+
+# contents: write is required to push a data branch.
+# pull-requests: write is required to open the review PR.
+# The job never merges, never deploys, and has no secrets.
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: als-clinicaltrials-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run offline tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Sync public study metadata
+        id: sync
+        run: python scripts/sync_clinicaltrials.py --repo-root .
+
+      - name: Refuse to continue if the frozen baseline changed
+        run: |
+          set -euo pipefail
+          if ! git diff --quiet -- data/baselines; then
+            echo "Frozen baseline changed. This job will not commit it."
+            git diff --stat -- data/baselines
+            exit 1
+          fi
+
+      - name: Open a review pull request when tracked data changed
+        if: steps.sync.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          branch="data-sync/$(date -u +%Y%m%d)"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            git fetch origin "$branch"
+            git checkout -B "$branch" "origin/$branch"
+          else
+            git checkout -B "$branch"
+          fi
+          git add data/latest data/changes data/registry
+          if git diff --cached --quiet; then
+            echo "No staged monitoring changes."
+            exit 0
+          fi
+          git commit -m "chore: sync ClinicalTrials.gov ALS monitoring snapshot"
+          git push -u origin "$branch"
+          body="$(python scripts/render_sync_pr_body.py)"
+          title="chore: ClinicalTrials.gov ALS sync $(date -u +%Y-%m-%d)"
+          if gh pr view "$branch" --json url >/dev/null 2>&1; then
+            gh pr edit "$branch" --title "$title" --body "$body"
+          else
+            gh pr create --base main --head "$branch" --title "$title" --body "$body"
+          fi
+          echo "Opened a pull request for human review. This workflow does not merge."

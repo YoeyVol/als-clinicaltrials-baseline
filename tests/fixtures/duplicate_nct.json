@@ -1,0 +1,31 @@
+{
+  "totalCount": 2,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCT10000008", "briefTitle": "Duplicate ALS study"},
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "lastUpdatePostDateStruct": {"date": "2024-01-02"},
+          "studyFirstPostDateStruct": {"date": "2024-01-01"}
+        },
+        "designModule": {"studyType": "INTERVENTIONAL", "phases": ["PHASE1"]},
+        "conditionsModule": {"conditions": ["ALS"]}
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {"nctId": "NCT10000008", "briefTitle": "Duplicate ALS study copy"},
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "lastUpdatePostDateStruct": {"date": "2024-01-02"},
+          "studyFirstPostDateStruct": {"date": "2024-01-01"}
+        },
+        "designModule": {"studyType": "INTERVENTIONAL", "phases": ["PHASE1"]},
+        "conditionsModule": {"conditions": ["ALS"]}
+      },
+      "hasResults": false
+    }
+  ]
+}

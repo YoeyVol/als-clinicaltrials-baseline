@@ -1,0 +1,47 @@
+{
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT10000003",
+          "briefTitle": "Kennedy's Disease biologic study",
+          "officialTitle": "A phase 3 study in Kennedy's Disease"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED",
+          "studyFirstPostDateStruct": {"date": "2019-05-01"},
+          "lastUpdateSubmitDate": "2021-03-01",
+          "lastUpdatePostDateStruct": {"date": "2021-03-03"},
+          "statusVerifiedDate": "2021-03",
+          "resultsFirstSubmitDate": "2021-01-15",
+          "resultsFirstPostDateStruct": {"date": "2021-03-03"}
+        },
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Kennedy Sponsor"}},
+        "conditionsModule": {"conditions": ["Kennedy's Disease"]},
+        "designModule": {"studyType": "INTERVENTIONAL", "phases": ["PHASE3"]},
+        "armsInterventionsModule": {
+          "interventions": [{"type": "BIOLOGICAL", "name": "Example Biologic KD"}]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {"facility": "City Clinic", "city": "Lyon", "country": "France", "status": ""}
+          ]
+        }
+      },
+      "hasResults": true,
+      "resultsSection": {
+        "outcomeMeasuresModule": {
+          "outcomeMeasures": [
+            {
+              "type": "PRIMARY",
+              "title": "Change in strength",
+              "timeFrame": "24 weeks",
+              "paramType": "MEAN",
+              "unitOfMeasure": "score"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

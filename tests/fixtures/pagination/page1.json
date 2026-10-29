@@ -1,0 +1,67 @@
+{
+  "totalCount": 3,
+  "nextPageToken": "PAGE2",
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT10000001",
+          "briefTitle": "Phase 1/2 study of Example Drug in ALS",
+          "officialTitle": "A phase 1 and 2 study of Example Drug"
+        },
+        "statusModule": {
+          "overallStatus": "RECRUITING",
+          "studyFirstPostDateStruct": {"date": "2024-01-15"},
+          "lastUpdateSubmitDate": "2024-06-01",
+          "lastUpdatePostDateStruct": {"date": "2024-06-02"},
+          "statusVerifiedDate": "2024-06"
+        },
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Example Sponsor"}},
+        "conditionsModule": {"conditions": ["Amyotrophic Lateral Sclerosis"]},
+        "designModule": {"studyType": "INTERVENTIONAL", "phases": ["PHASE2", "PHASE1"]},
+        "armsInterventionsModule": {
+          "interventions": [
+            {"type": "DRUG", "name": "Example Drug"},
+            {"type": "BEHAVIORAL", "name": "Coaching"}
+          ]
+        },
+        "contactsLocationsModule": {
+          "locations": [
+            {
+              "facility": "General Hospital",
+              "city": "Boston",
+              "country": "United States",
+              "status": "RECRUITING",
+              "contacts": [{"name": "Pat Example", "email": "secret@example.com", "phone": "555-0100"}]
+            }
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT10000002",
+          "briefTitle": "Expanded access to Example Biologic for ALS",
+          "officialTitle": "Expanded access protocol"
+        },
+        "statusModule": {
+          "overallStatus": "AVAILABLE",
+          "studyFirstPostDateStruct": {"date": "2025-02-01"},
+          "lastUpdateSubmitDate": "2025-02-02",
+          "lastUpdatePostDateStruct": {"date": "2025-02-03"},
+          "statusVerifiedDate": "2025-02"
+        },
+        "sponsorCollaboratorsModule": {"leadSponsor": {"name": "Access Sponsor"}},
+        "conditionsModule": {"conditions": ["Amyotrophic Lateral Sclerosis"]},
+        "designModule": {"studyType": "EXPANDED_ACCESS"},
+        "armsInterventionsModule": {
+          "interventions": [{"type": "BIOLOGICAL", "name": "Example Biologic"}]
+        },
+        "contactsLocationsModule": {}
+      },
+      "hasResults": false
+    }
+  ]
+}

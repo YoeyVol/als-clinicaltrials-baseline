@@ -1,0 +1,78 @@
+{
+  "id": "2026-10-28",
+  "frozen": true,
+  "immutable": true,
+  "doNotRewrite": true,
+  "scriptVersion": "1.1.0",
+  "extractor": "baseline-extract-1.1.0",
+  "source": "const DATA array embedded in index.html",
+  "sourcePage": "index.html",
+  "sourceCommit": "ac12ac1fbacf51c532782fc9766aaf9bd0f1725f",
+  "sourceUrl": "https://clinicaltrials.gov/",
+  "snapshotTimestamp": "2026-10-28T23:59:00-07:00",
+  "snapshotTimestampMeaning": "Export time printed on the original static page: 2026-10-28 23:59 PDT. The page did not store an API query timestamp separate from that label.",
+  "recordCount": 486,
+  "checksumSha256": "34712b2177c88c14ae88c89f08478116e6cd0bd3c64b8f9f967d92996dc273a3",
+  "checksumMeaning": "SHA-256 of canonical JSON (sorted keys, indent 2) for the record array.",
+  "scope": {
+    "description": "Historical static export. The page described a broad ALS/MND-related condition search and embedded the drug, biological, and expanded-access candidates from that export. The exact ClinicalTrials.gov API query string was not stored on the page.",
+    "descriptionZh": "历史静态导出。页面记录了广义 ALS/运动神经元病条件检索规模，并内嵌其中的药物、生物制剂和扩展使用候选。原始页面没有保存精确的 API 查询字符串。",
+    "broadConditionSearchCount": 1097,
+    "broadConditionSearchCountSource": "index.html overview card, not recomputed",
+    "embeddedRecordCount": 486,
+    "embeddedRecordCountSource": "length of const DATA",
+    "conditionSearchMayBeBroaderThanStrictAls": true,
+    "exampleBeyondStrictAls": {
+      "nct": "NCT00004771",
+      "title": "Phase II Study of Leuprolide and Testosterone for Men With Kennedy's Disease or Other Motor Neuron Disease",
+      "reason": "Title names Kennedy's Disease or other motor neuron disease and does not name ALS."
+    }
+  },
+  "derivedFromRecords": {
+    "statusCounts": {
+      "COMPLETED": 254,
+      "UNKNOWN": 42,
+      "TERMINATED": 50,
+      "WITHDRAWN": 17,
+      "TEMPORARILY_NOT_AVAILABLE": 2,
+      "SUSPENDED": 3,
+      "NOT_YET_RECRUITING": 29,
+      "RECRUITING": 44,
+      "ACTIVE_NOT_RECRUITING": 28,
+      "NO_LONGER_AVAILABLE": 7,
+      "APPROVED_FOR_MARKETING": 2,
+      "AVAILABLE": 3,
+      "ENROLLING_BY_INVITATION": 5
+    },
+    "phaseCounts": {
+      "PHASE2": 267,
+      "PHASE3": 92,
+      "PHASE1": 166,
+      "PHASE4": 7,
+      "NA": 13,
+      "EARLY_PHASE1": 18
+    },
+    "emptyPhaseRecords": 24,
+    "codedPhaseAssignments": 563,
+    "legacyPageBuckets": {
+      "recruiting": 44,
+      "notYetRecruiting": 29,
+      "enrollingByInvitation": 5,
+      "available": 3,
+      "activeNotRecruiting": 28,
+      "mergedRecruitingLike": 81,
+      "ongoingIncludingNotRecruiting": 109,
+      "warning": "mergedRecruitingLike adds RECRUITING, NOT_YET_RECRUITING, ENROLLING_BY_INVITATION, and AVAILABLE. It is not a count of recruiting trials. AVAILABLE is an expanded-access status.",
+      "warningZh": "mergedRecruitingLike 把招募中、尚未招募、邀请入组和扩展使用状态 AVAILABLE 加在一起。它不是正在招募的试验数。AVAILABLE 属于扩展使用，不应算作普通招募中。"
+    },
+    "multiPhaseRecords": 101
+  },
+  "notes": [
+    "These counts are a frozen historical baseline, not current truth.",
+    "Do not replace this file with a later API pull.",
+    "1097 is the broad background count printed in 2026; it is not the number of rows in this file.",
+    "486 is the number of rows in this file.",
+    "Phase bars over-count trials that list more than one phase.",
+    "The old 「招募中类」 figure merged several statuses and must not be read as N recruiting trials."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "changes": [],
+  "currentRecordCount": 485,
+  "currentSnapshotId": "c964bc1478c08faacdea9b88535a056ba9c481366ca7a9fee9dda32543a1a1ff",
+  "detectedAt": "2026-10-29T08:40:26Z",
+  "id": "20261029T084026Z",
+  "kind": "initial_snapshot",
+  "previousRecordCount": null,
+  "previousSnapshotId": null,
+  "query": {
+    "fields": "NCTId,BriefTitle,OfficialTitle,OverallStatus,StudyType,Phase,Condition,InterventionType,InterventionName,LeadSponsorName,LocationFacility,LocationCity,LocationCountry,LocationStatus,LastUpdatePostDate,StudyFirstPostDate,LastUpdateSubmitDate,StatusVerifiedDate,HasResults,ResultsFirstPostDate,ResultsFirstSubmitDate,OutcomeMeasureType,OutcomeMeasureTitle,OutcomeMeasureTimeFrame,OutcomeMeasureParamType,OutcomeMeasureUnitOfMeasure",
+    "filter.advanced": "AREA[InterventionType]DRUG OR AREA[InterventionType]BIOLOGICAL OR AREA[StudyType]EXPANDED_ACCESS",
+    "pageSize": 1000,
+    "query.cond": "ALS"
+  },
+  "schemaVersion": 1,
+  "scopeReview": {
+    "baselineId": "2026-10-28",
+    "intersectionCount": 484,
+    "notCancellations": true,
+    "notNewTrials": true,
+    "note": "Differences versus the frozen 2026-10-28 baseline are query-scope and time-window differences for human review. They are not a list of new trials and not cancellations. The original static page did not record the exact API query string. V1.1 monitoring uses query.cond=ALS plus a drug, biological, or expanded-access filter. Automatic change detection compares only the previous successful snapshot of this same query.",
+    "noteZh": "与 2026-10-28 冻结基线的 NCT 差异，是查询口径和时间窗口不同，供人工复核。只出现在当前查询不是新增试验，只出现在历史基线也不是试验被取消。原始静态页没有保存当时的精确 API 查询字符串。V1.1 监测查询是 query.cond=ALS，并限定药物、生物制剂或扩展使用。自动变化检测只对照这一同一查询的上一次成功快照。",
+    "onlyInBaselineCount": 2,
+    "onlyInCurrentCount": 1
+  },
+  "scriptVersion": "1.1.0",
+  "source": "ClinicalTrials.gov API v2",
+  "sourceEndpoint": "https://clinicaltrials.gov/api/v2/studies",
+  "summary": {}
+}
